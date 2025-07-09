@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Implementation Helper - Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .iframe-container {
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .iframe-wrapper {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            display: block;
+        }
+        .features {
+            padding: 40px;
+            background: white;
+        }
+        .features h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a202c;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            padding: 30px;
+            border-radius: 8px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+        .feature-card h3 {
+            margin: 0 0 15px 0;
+            color: #2d3748;
+        }
+        .feature-card p {
+            margin: 0;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .embed-code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .code-section {
+            margin: 30px 0;
+        }
+        .code-section h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Implementation Helper</h1>
+            <p>Embed this powerful tool on your website to help businesses discover their AI transformation path</p>
+        </div>
+        
+        <div class="iframe-container">
+            <div class="iframe-wrapper">
+                <iframe 
+                    src="./dist/index.html" 
+                    title="AI Implementation Helper"
+                    allow="fullscreen"
+                ></iframe>
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🎯 Personalized Recommendations</h3>
+                    <p>Get AI implementation strategies tailored to your industry, business size, and specific goals.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Industry-Specific Insights</h3>
+                    <p>Discover how AI can transform your specific industry with detailed transformation opportunities.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🗺️ Implementation Roadmap</h3>
+                    <p>Step-by-step implementation plan with timelines, resources, and expected outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚠️ Risk Assessment</h3>
+                    <p>Identify potential challenges and get strategies to mitigate implementation risks.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📈 Success Metrics</h3>
+                    <p>Define measurable outcomes and KPIs to track your AI transformation success.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💾 Export & Share</h3>
+                    <p>Download detailed reports and share results with your team or stakeholders.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>Embedding Instructions</h2>
+            
+            <div class="code-section">
+                <h3>Basic iframe Embed</h3>
+                <div class="embed-code">
+&lt;iframe 
+  src="https://sodapork.github.io/implementaihelper" 
+  width="100%" 
+  height="800px" 
+  frameborder="0"
+  style="border: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+  title="AI Implementation Helper"
+&gt;&lt;/iframe&gt;
+                </div>
+            </div>
+
+            <div class="code-section">
+                <h3>Responsive iframe Embed</h3>
+                <div class="embed-code">
+&lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 100%;"&gt;
+  &lt;iframe 
+    src="https://sodapork.github.io/implementaihelper" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+    title="AI Implementation Helper"
+  &gt;&lt;/iframe&gt;
+&lt;/div&gt;
+                </div>
+            </div>
+
+            <div class="code-section">
+                <h3>Custom Styled iframe</h3>
+                <div class="embed-code">
+&lt;iframe 
+  src="https://sodapork.github.io/implementaihelper" 
+  width="100%" 
+  height="700px" 
+  frameborder="0"
+  style="
+    border: none; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background: white;
+  "
+  title="AI Implementation Helper"
+&gt;&lt;/iframe&gt;
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
